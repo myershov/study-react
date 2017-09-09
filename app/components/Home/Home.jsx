@@ -8,6 +8,7 @@ class Home extends Component {
       <div id='home'>
         <Link to={'/html/ZamygaAlexandra'}>ZamygaAlexandra</Link>
         <Link to={'/html/DenisKenzo'}>DenisKenzo</Link>
+        <Link to={'/html/Krasav4er'}>krasav4er</Link>
         <div className='test' />
       </div>
     )
