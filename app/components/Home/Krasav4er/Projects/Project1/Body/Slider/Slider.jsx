@@ -44,7 +44,6 @@ class Slider extends Component {
           urna, venenatis at ultrices ac, viverra in turpis. Duis sceler isque mauri sut metus.
         </div>
         <div className='image' />
-
       </div>
     )
   }

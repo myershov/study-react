@@ -8,7 +8,6 @@ class Project1 extends Component {
   render () {
     return (
       <div>
-      adsasdasd
         <Header />
         <Body />
         <Footer />
