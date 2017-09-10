@@ -14,17 +14,24 @@ class Slider extends Component {
       active: 0
     }
     this.handleRight = this.handleRight.bind(this)
+    this.handleLeft = this.handleLeft.bind(this)
   }
   handleRight () {
     let active = this.state.active + 1
     if (active === slides.length) active = 0
     this.setState({active})
   }
+  handleLeft () {
+    let active = this.state.active - 1
+    if (active === -1) active = slides.length - 1
+    this.setState({active})
+  }
+
   render () {
     return (
       <div>
         <div className='slider'>
-          <button className='left'>left</button>
+          <button className='left' onClick={this.handleLeft}>left</button>
           <div className='window'>
             <div className='train' id='train'>
               {slides.map((slide, key) => key === this.state.active && <div key={key} className={slide.className}>{slide.label}</div>)}
