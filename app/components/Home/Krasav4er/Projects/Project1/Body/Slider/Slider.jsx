@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import './Slider.styl'
 
 const slides = [
-  {label: 'label1', className: 'block y'},
-  {label: 'label2', className: 'block g'},
-  {label: 'label3', className: 'block r'}
+  {label: 'Yellow', className: 'block y'},
+  {label: 'Green', className: 'block g'},
+  {label: 'Red', className: 'block r'}
 ]
 
 class Slider extends Component {
