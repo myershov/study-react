@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*@font-face {*/
+  /*font-family: "Segoe UI Bold";*/
+  /*src: url('./fonts/SegoeUIBold.ttf');*/
+/*}*/
+
+@font-face {
+  font-family: "Segoe UI Light";
+  src: url('./fonts/SegoeUILight.ttf');
+}
+
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: url('./fonts/SegoeUIRegular.ttf');
+}
+
+@font-face {
+  font-family: "Segoe UI SemiBold";
+  src: url('./fonts/SegoeUISemiBold.ttf');
+}
+
+.sprite-frame, .sprite-instagram, .sprite-serious, .sprite-coffee {
+  display: inline-block;
+  background: url('./images/spritesheet.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+
+.sprite-frame {
+  background-position: -4px -0px;
+  width: 48px;
+  height: 48px;
+}
+
+.sprite-instagram {
+  background-position: -4px -52px;
+  width: 48px;
+  height: 48px;
+}
+
+.sprite-serious {
+  background-position: -4px -104px;
+  width: 47px;
+  height: 48px;
+}
+
+.sprite-coffee {
+  background-position: -4px -153px;
+  width: 34px;
+  height: 48px;
+}
+
+.container, .container-fluid{
+  padding: 0;
+}
+
+
+body{
+  font-family: "Segoe UI Regular", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
