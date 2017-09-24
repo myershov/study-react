@@ -97,13 +97,17 @@ header .hero h1 span {
     }
 
     header nav{
-        display: none;
+        //display: none;
+        display: block;
         margin: 0;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background-color: #48525a;
+        overflow hidden;
+        transition: all  0.4s linear;
+        max-height: 0;
     }
 
     header nav li{

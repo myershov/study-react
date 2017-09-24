@@ -157,7 +157,8 @@
     /*}*/
 
     .portfolio nav{
-        display: none;
+        //display: none;
+        display: block;
         margin: 0;
         position: absolute;
         top: 140px;
@@ -165,6 +166,9 @@
         width: 100%;
         background-color: #48525a;
         z-index: 100;
+        overflow: hidden;
+        transition: all 0.4s linear;
+        max-height: 0;
     }
 
     .portfolio nav li{
