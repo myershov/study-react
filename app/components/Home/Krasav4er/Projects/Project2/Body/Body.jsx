@@ -45,14 +45,38 @@ class Body extends Component {
   render () {
     return (
       <div className='block-body'>
-        <div className='block-body-logical'>
-          <input type='number' placeholder='Enter A' onClick={this.handleA} />
-          <input type='number' placeholder='Enter B' onClick={this.handleB} />
-          <input type='number' placeholder='Enter C' onClick={this.handleC} />
-          <button type='button' onClick={this.handleResult}>get result</button>
+        <div className='block-body-title'>
+          <p>Знаходження коренів квадратного рівняння</p>
         </div>
-        {`x1 = ${this.state.x1}`}
-        {`x2 = ${this.state.x2}`}
+        <div className='block-body-instructions'>
+          <p>Квадратне рівняння відноситься до алгебраїчних рівнянь загального вигляду другого порядку , де Х є вільною змінної, a, b, c це коефіцієнти, де a не дорівнює 0.
+          Воно може мати від одного до двох коренів з речовими коефіцієнтами, залежить від значення дискримінанта. Корні можуть бути комплексними і речовими.
+          Основні кілька етапів вирішення:
+          1. Дискримінант обчислюється за такою формулою:
+          2. Корні квадратного рівняння в онлайн калькуляторі знаходяться за наступною формулою:
+          Введіть негативний коефіцієнт, якщо Вам потрібно поставити мінус.</p>
+        </div>
+        <div className='block-body-logical'>
+          <p>Please, input parameters</p>
+          <input type='number' placeholder='A' onClick={this.handleA} />
+          <h2>x<sup>2</sup> +</h2>
+          <input type='number' placeholder='B' onClick={this.handleB} />
+          <h2>x +</h2>
+          <input type='number' placeholder='C' onClick={this.handleC} />
+          <button type='button' onClick={this.handleResult}>get result</button>
+          <div className='block-body-result'>
+            <p>
+              <script>
+                document.getElementById("block-body-result").style.visibility = "visible";
+              </script>
+              Results: <h2>{`x1 = ${this.state.x1}`}</h2>
+              <h2>{`x2 = ${this.state.x2}`}</h2>
+            </p>
+          </div>
+        </div>
+        <div className='block-body-calc'>
+          calculator
+        </div>
       </div>
     )
   }
