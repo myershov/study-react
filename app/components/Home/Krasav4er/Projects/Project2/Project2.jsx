@@ -14,7 +14,7 @@ class Project2 extends Component {
         <Body />
         <Footer />
       </div>
-    )
+    );
   }
 }
 export default Project2

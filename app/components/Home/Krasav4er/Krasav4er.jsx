@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import './Krasav4er.styl'
 
 class Krasav4er extends Component {

@@ -1,0 +1,113 @@
+/*------------- HEADER ----------------------------------------------------------------*/
+header {
+  background: url("../../images/header_bg.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+header .container-fluid.top_nav {
+  background-color: rgba(72,82,90,0.85);
+}
+header .container {
+  overflow: hidden;
+}
+header .logo {
+  float: left;
+  margin-top: 62px;
+}
+header nav {
+  float: right;
+  margin: 64px 0 62px;
+  display: flex;
+}
+header nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 8px;
+}
+header nav li:last-child {
+  margin-right: 0;
+}
+header nav a {
+  transition: border-color 2s, color 0.5s;
+  padding: 6px 16px;
+  color: #fff;
+  font-family: "Segoe UI Bold";
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+header nav a:focus {
+  color: #4bcaff;
+/*border-color: #4bcaff;*/
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #4bcaff;
+/*border-color: #4bcaff;*/
+  text-decoration: none;
+}
+header .hero h1 {
+  margin: 244px 0 256px;
+  font: 42px "Segoe UI Light";
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+header .hero h1 span {
+  color: #fff;
+  padding: 3px 16px 6px;
+  background-color: rgba(72,82,90,0.85);
+}
+.main-nav-trigger {
+  display: none;
+  margin-top: 51px;
+  font-size: 45px;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.main-nav-trigger:hover {
+  color: #4bcaff;
+}
+@media (max-width: 992px) {
+  header .container-fluid {
+    position: relative;
+  }
+  header .main-nav-trigger {
+    display: block;
+  }
+  header .logo {
+    margin: 62px 0;
+  }
+  header nav {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #48525a;
+    overflow: hidden;
+    transition: all 0.4s linear;
+    max-height: 0;
+  }
+  header nav li {
+    display: block;
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid #56626c;
+    float: none;
+  }
+  header nav li:last-of-type {
+    border-bottom: none;
+  }
+  header nav a {
+    display: inline-block;
+    padding: 20px 30px;
+    cursor: pointer;
+  }
+  header nav a:active {
+    background-color: transparent;
+  }
+}
+/*-------------------------------------------------------------------------------*/
