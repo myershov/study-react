@@ -1,0 +1,7 @@
+#home {
+  overflow: hidden;
+  width: 100%;
+}
+#home .test {
+  height: 1000px;
+}
