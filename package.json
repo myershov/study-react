@@ -27,8 +27,8 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
     "moment": "^2.18.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "style-loader": "^0.18.1",
@@ -40,6 +40,7 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "npm": "^5.4.2",
     "react-bootstrap": "^0.31.3",
     "react-router-hash-link": "^1.1.0"
   }
