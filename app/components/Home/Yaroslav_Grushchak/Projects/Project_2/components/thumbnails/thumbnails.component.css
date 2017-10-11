@@ -1,0 +1,92 @@
+.thumbnails {
+  height: 100%;
+  overflow-y: auto;
+}
+.thumbnails .thumb {
+  cursor: pointer;
+}
+.thumbnails img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  #gallery-container .thumbnails {
+    padding-right: 0;
+  }
+  #gallery-container .thumbnails .thumb,
+  #gallery-container .thumbnails .thumb img {
+    padding: 0;
+  }
+  #gallery-container .thumbnails .thumb {
+    overflow: hidden;
+  }
+  #gallery-container .thumbnails .thumb .title {
+    font-weight: normal;
+    text-align: left;
+  }
+}
+@media (max-width: 991px) {
+  #gallery-container .thumbnails {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: calc(100% - 30px);
+    margin: 0 15px 0 15px;
+    padding: 0px;
+    height: 17.9vmin;
+  }
+  #gallery-container .thumbnails .thumb,
+  #gallery-container .thumbnails .thumb img {
+    padding: 0;
+  }
+  #gallery-container .thumbnails .thumb {
+    padding-left: 2px;
+    display: inline-block;
+    white-space: normal;
+    float: none;
+    vertical-align: top;
+    position: relative;
+    height: 100%;
+  }
+  #gallery-container .thumbnails .thumb:first-child {
+    padding-left: 0;
+  }
+  #gallery-container .thumbnails .thumb img {
+    display: inline-block;
+    height: 100%;
+  }
+  #gallery-container .thumbnails .title {
+    font-weight: normal;
+    text-align: left;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: rgba(255,255,255,0.8);
+    margin-left: 2px;
+    padding-left: 8px;
+    white-space: nowrap;
+  }
+  #gallery-container .thumbnails .thumb:first-child .title {
+    margin-left: 0 !important;
+  }
+  #gallery-container .thumbnails .title:after {
+    content: '';
+    width: 22px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0.76), transparent);
+  }
+}
+@media (max-width: 600px) {
+  #gallery-container .thumbnails {
+    height: 22vw;
+  }
+  #gallery-container .thumbnails .title {
+    font-size: 1.8vh;
+  }
+}

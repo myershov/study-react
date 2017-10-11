@@ -1,0 +1,22 @@
+#gallery-container
+  .pagination
+    position absolute
+    top 0
+    right 0
+    margin 10px 22px 0 0
+
+    .next, .prev
+      display inline-block
+      background-color rgba(0,0,0,0.65)
+      border-color rgba(0,0,0,0.3)
+    .next:focus, .prev:focus
+      outline none
+
+
+@media(max-width: 550px){
+  #gallery-container .pagination .next,
+  #gallery-container .pagination .prev{
+    font-size 2.4vmin
+    padding 1.2vmin 1.5vmin
+  }
+}
