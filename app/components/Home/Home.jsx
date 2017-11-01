@@ -9,7 +9,8 @@ class Home extends Component {
         <Link to={'/html/ZamygaAlexandra'}>ZamygaAlexandra</Link><br /><br />
         <Link to={'/html/DenisKenzo'}>DenisKenzo</Link><br /><br />
         <Link to={'/html/Krasav4er'}>krasav4er</Link><br /><br />
-        <Link to='/html/Yaroslav_Grushchak'>Yaroslav_Grushchak</Link>
+        <Link to='/html/Yaroslav_Grushchak'>Yaroslav_Grushchak</Link><br /><br />
+        <Link to={'/html/DarinkaP'}>DarinkaP</Link>
         <div className='test' />
       </div>
     )
