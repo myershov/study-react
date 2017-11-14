@@ -44,7 +44,7 @@ module.exports = {
   },
   devServer: {
     stats: statConf,
-    port: '3000'
+    port: '3001'
   },
   plugins: [
     new ExtractTextPlugin('./dist/bundle.css')

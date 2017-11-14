@@ -23,7 +23,7 @@ class Header extends React.Component {
     })
 
     let menuElemsQuantity = ReactDOM.findDOMNode(this.navRef).children.length // количество элементов внутри выпадаюшего меню
-    this.menuHeight = ReactDOM.findDOMNode(this.navRef).children[0].offsetHeight
+    this.menuHeight = ReactDOM.findDOMNode(this.navRef).children[0].offsetHeight    // высота элемента, включая border
     this.menuHeight += Number(window.getComputedStyle(ReactDOM.findDOMNode(this.navRef).children[0]).getPropertyValue('margin-top').slice(0, -2))
     this.menuHeight += Number(window.getComputedStyle(ReactDOM.findDOMNode(this.navRef).children[0]).getPropertyValue('margin-bottom').slice(0, -2))
     this.menuHeight = this.menuHeight * menuElemsQuantity + 'px'

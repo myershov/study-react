@@ -1,47 +1,39 @@
 /*---------------- SERVICES -----------------------------------------------------*/
-
-.services{
-    background-color: #4bcaff;
+.services {
+  background-color: #4bcaff;
 }
-
-.services .container{
-    margin: 78px auto 76px;
-    color: #fff;
+.services .container {
+  margin: 78px auto 76px;
+  color: #fff;
 }
-
-.stn-heading{
-    font: 30px "Segoe UI Light";
-    line-height: 24px;
-    margin: 0 0 38px 0;
-    text-transform: uppercase;
+.stn-heading {
+  font: 30px "Segoe UI Light";
+  line-height: 24px;
+  margin: 0 0 38px 0;
+  text-transform: uppercase;
 }
-
-.stn-heading:after{
-    content: "";
-    display: block;
-    width: 45px;
-    height: 2px;
-    margin-top: 11px;
-    background-color: #ffffff;
+.stn-heading:after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 2px;
+  margin-top: 11px;
+  background-color: #fff;
 }
-
-.services article h3{
-    font: 24px "Segoe UI SemiBold";
-    line-height: 24px;
-    text-transform: uppercase;
-    margin: 13px 0 12px 0px;
+.services article h3 {
+  font: 24px "Segoe UI SemiBold";
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 13px 0 12px 0px;
 }
-
-.services article p{
-    font: 12px "Segoe UI SemiBold";
-    line-height: 18px;
-    margin: 0;
+.services article p {
+  font: 12px "Segoe UI SemiBold";
+  line-height: 18px;
+  margin: 0;
 }
-
-@media screen and (max-width: 1200px){
-    .services article{
-        margin-bottom: 50px;
-    }
+@media screen and (max-width: 1200px) {
+  .services article {
+    margin-bottom: 50px;
+  }
 }
-
 /*-------------------------------------------------------------------------------*/

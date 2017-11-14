@@ -5,6 +5,7 @@ class Body extends Component {
   constructor () {
     super()
     this.state = {
+      isResExist: false,
       x1: null,
       x2: null,
       a: null,
@@ -28,15 +29,15 @@ class Body extends Component {
   handleResult () {
     const { a, b, c } = this.state
     const { x1, x2 } = this.calculate(a, b, c)
-    this.setState({ x1, x2 })
+    this.setState({ x1, x2, isResExist: true })
   }
   calculate (a, b, c) {
     const d = b * b - 4 * a * c
     if (d === 0) {
       return { x1: -b / (2 * a), x2: '' }
     } else if (d > 0) {
-      const x1 = (-b + Math.sqrt(d)) / (2 * a)
-      const x2 = (-b - Math.sqrt(d)) / (2 * a)
+      const x1 = Math.round((-b + Math.sqrt(d)) / (2 * a) * 100) / 100
+      const x2 = Math.round((-b - Math.sqrt(d)) / (2 * a) * 100) / 100
       return { x1, x2 }
     } else {
       return { x1: 'no roots', x2: 'no roots' }
@@ -65,17 +66,16 @@ class Body extends Component {
           <input type='number' placeholder='C' onClick={this.handleC} />
           <button type='button' onClick={this.handleResult}>get result</button>
           <div className='block-body-result'>
-            <p>
-              <script>
-                document.getElementById("block-body-result").style.visibility = "visible";
-              </script>
-              Results: <h2>{`x1 = ${this.state.x1}`}</h2>
-              <h2>{`x2 = ${this.state.x2}`}</h2>
-            </p>
+            {this.state.isResExist && (
+              <p>
+                Results: <h2>{`x1 = ${this.state.x1}`}</h2>
+                <h2>{`x2 = ${this.state.x2}`}</h2>
+              </p>
+            )}
           </div>
         </div>
         <div className='block-body-calc'>
-          calculator
+          My simple calculator
         </div>
       </div>
     )

@@ -1,4 +1,5 @@
-import { DenisKenzo, ZamygaAlexandra, Krasav4er, Yaroslav_Grushchak } from './components/Home'
+import { DenisKenzo, ZamygaAlexandra, Krasav4er, Yaroslav_Grushchak, DarinkaP } from './components/Home'
+import { DarinkaProject1 } from './components/Home/DarinkaP/Projects'
 import { Project1, Project2 } from './components/Home/Krasav4er/Projects'
 import { HashRouter as Router, Route } from 'react-router-dom'
 import Home from './components/Home/Home.jsx'
@@ -16,6 +17,8 @@ ReactDOM.render(
         <Route path='/html/Krasav4er/project1' component={Project1} />
         <Route path='/html/Krasav4er/project2' component={Project2} />
         <Route path='/html/Yaroslav_Grushchak' component={Yaroslav_Grushchak} />
+        <Route exact path='/html/DarinkaP' component={DarinkaP} />
+        <Route path='/html/DarinkaP/project_1' component={DarinkaProject1} />
       </div>
   </Router>,
   document.getElementById('root')
