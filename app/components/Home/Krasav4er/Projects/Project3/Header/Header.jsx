@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import './Header.styl'
 
 class Header extends Component {
@@ -7,96 +8,98 @@ class Header extends Component {
       <div>
         <div className='wrapper'>
           <div className='header-content'>
-            <div class="logo">
-                <a href="#">
-                <div class="logo__img"><img src="img/logo.png" class="logo__img" /></div>
-                <div class="logo__text">
+            <div className='logo'>
+              <a href=''>
+                <div className='logo__img'>
+                  <img src={require('../images/logo.png')} alt='logo__img' />
+                </div>
+                <div className='logo__text'>
                     Интернет-магазин «Благой-арт»
                 </div>
-                </a>
+              </a>
             </div>
-            <div class="search-bar">
-                <input type="search" placeholder="Введите название или артикул" class="search" />
-                <div class="search-bar__button">
-                    <img src="img/search.jpg" />
-                </div>
+            <div className='search-bar'>
+              <input type='text' placeholder='Введите название или артикул' className='search' />
+              <div className='search-bar__button'>
+                <img src={require('../images/search.png')} />
+              </div>
             </div>
-            <div class="contacts">
-                <div class="contacts__phone">
-                    +7 (800) 707-81-39
-                </div>
-                <div class="contacts__whours">
-                    ПН - ПТ с 9:00 до 18:00
-                </div>
-                <div class="contacts__delivery">
-                    Доставка по РФ и СНГ
-                </div>
+            <div className='contacts'>
+              <div className='contacts__phone'>
+                  +7 (800) 707-81-39
+              </div>
+              <div className='contacts__whours'>
+                  ПН - ПТ с 9:00 до 18:00
+              </div>
+              <div className='contacts__delivery'>
+                  Доставка по РФ и СНГ
+              </div>
             </div>
-            <div class="navbar">
-                <div class="list">
-                    <div class="main-menu">
-                        <ul class="navlist">
-                            <li class="navlist__item dropdown-activator d-lev-1">
-                                <a href="javascript:void(0)" class="navlist__link">
-                                <img src="img/menu-icon.jpg" class="menu-icon" />
-                                    КАТАЛОГ ТОВАРОВ
-                                <img src="img/menu-icon-drop.jpg" class="menu-icon-drop" />
-                                </a>
-                                <ul class="dropdown-content d-lev-1 hidden">
-                                    <li class="dropdown-activator d-lev-2">
-                                       <a href="javascript:void(0)" class="subnavlist">
-                                           Cвадебная бижутерия
-                                       <img src="img/menu-icon-right.png" class="menu-icon-right" />
-                                       </a>
-                                    </li>
-                                    <li><a href="javascript:void(0)" class="subnavlist">Аксессуары для волос</a></li>
-                                    <li><a href="javascript:void(0)" class="subnavlist">Броши</a></li>
-                                    <li class="dropdown-activator d-lev-2">
-                                        <a href="javascript:void(0)" class="subnavlist__link">
-                                            Мужские аксессуары
-                                        <img src="img/menu-icon-right.png" class="menu-icon-right" />
-                                        </a>
-                                        <ul class="dropdown-subcontent d-lev-2 hidden">
-                                            <p class="dropdown-subcontent-title">МУЖСКАЯ БИЖУТЕРИЯ</p>
-                                            <li><a href="javascript:void(0)" class="subnavlist">Браслеты</a></li>
-                                            <li><a href="javascript:void(0)" class="subnavlist">Кулоны</a></li>
-                                            <li><a href="javascript:void(0)" class="subnavlist">Зажимы и запонки</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="javascript:void(0)" class="subnavlist">Клатчи</a></li>
-                                    <li><a href="javascript:void(0)" class="subnavlist">Детская бижутерия</a></li>
-                                    <li><a href="javascript:void(0)" class="subnavlist">Демонстрационное оборудование</a></li>
-                                </ul>
-                            </li>
-                            <li class="navlist__item">
-                                <a href="#" class="navlist__link">УСЛОВИЯ РАБОТЫ</a>
-                            </li>
-                            <li class="navlist__item">
-                                <a href="#" class="navlist__link">СКИДКИ</a>
-                            </li>
-                            <li class="navlist__item">
-                                <a href="#" class="navlist__link">ОПЛАТА И ДОСТАВКА</a>
-                            </li>
-                            <li class="navlist__item">
-                                <a href="#" class="navlist__link">ДОКУМЕНТЫ</a>
-                            </li>
-                            <li class="navlist__item">
-                                <a href="#" class="navlist__link">КОНТАКТЫ</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="basket">
-                       <div class="basket__cart">
-                           <img src="img/basket-cart.jpg" class="basket__cart-image" />
-                           <img src="img/basket-quantity.jpg" class="basket__cart-image" />
-                           <span class="basket__cart-span">товаров / 56 789 Р</span>
-                       </div>
-                       <div class="basket__login">
-                           <img src="img/basket-face.jpg" class="basket__login-image" />
-                           <a href="#"><span class="basket__login-span">ВОЙТИ</span></a>
-                       </div>
-                    </div>
+            <div className='navbar'>
+              <div className='list'>
+                <div className='main-menu'>
+                  <ul className='navlist'>
+                    <li className='navlist__item dropdown-activator d-lev-1'>
+                      <a href='javascript:void(0)' className='navlist__link'>
+                        <img src={require('../images/menu-icon.jpg')} className='menu-icon' />
+                          КАТАЛОГ ТОВАРОВ
+                        <img src='img/menu-icon-drop.jpg' className='menu-icon-drop' />
+                      </a>
+                      <ul className='dropdown-content d-lev-1 hidden'>
+                        <li className='dropdown-activator d-lev-2'>
+                          <a href='javascript:void(0)' className='subnavlist'>
+                           Cвадебная бижутерия
+                           <img src='img/menu-icon-right.png' className='menu-icon-right' />
+                          </a>
+                        </li>
+                        <li><a href='javascript:void(0)' className='subnavlist'>Аксессуары для волос</a></li>
+                        <li><a href='javascript:void(0)' className='subnavlist'>Броши</a></li>
+                        <li className='dropdown-activator d-lev-2'>
+                          <a href='javascript:void(0)' className='subnavlist__link'>
+                            Мужские аксессуары
+                            <img src='img/menu-icon-right.png' className='menu-icon-right' />
+                          </a>
+                          <ul className='dropdown-subcontent d-lev-2 hidden'>
+                            <p className='dropdown-subcontent-title'>МУЖСКАЯ БИЖУТЕРИЯ</p>
+                            <li><a href='javascript:void(0)' className='subnavlist'>Браслеты</a></li>
+                            <li><a href='javascript:void(0)' className='subnavlist'>Кулоны</a></li>
+                            <li><a href='javascript:void(0)' className='subnavlist'>Зажимы и запонки</a></li>
+                          </ul>
+                        </li>
+                        <li><a href='javascript:void(0)' className='subnavlist'>Клатчи</a></li>
+                        <li><a href='javascript:void(0)' className='subnavlist'>Детская бижутерия</a></li>
+                        <li><a href='javascript:void(0)' className='subnavlist'>Демонстрационное оборудование</a></li>
+                      </ul>
+                    </li>
+                    <li className='navlist__item'>
+                      <a href='#' className='navlist__link'>УСЛОВИЯ РАБОТЫ</a>
+                    </li>
+                    <li className='navlist__item'>
+                      <a href='#' className='navlist__link'>СКИДКИ</a>
+                    </li>
+                    <li className='navlist__item'>
+                      <a href='#' className='navlist__link'>ОПЛАТА И ДОСТАВКА</a>
+                    </li>
+                    <li className='navlist__item'>
+                      <a href='#' className='navlist__link'>ДОКУМЕНТЫ</a>
+                    </li>
+                    <li className='navlist__item'>
+                      <a href='#' className='navlist__link'>КОНТАКТЫ</a>
+                    </li>
+                  </ul>
                 </div>
+                <div className='basket'>
+                  <div className='basket__cart'>
+                    <img src='img/basket-cart.jpg' className='basket__cart-image' />
+                    <img src='img/basket-quantity.jpg' className='basket__cart-image' />
+                    <span className='basket__cart-span'>товаров / 56 789 Р</span>
+                  </div>
+                  <div className='basket__login'>
+                    <img src='img/basket-face.jpg' className='basket__login-image' />
+                    <a href='#'><span className='basket__login-span'>ВОЙТИ</span></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
