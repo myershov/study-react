@@ -9,17 +9,17 @@ import './main.styl'
 
 ReactDOM.render(
   <Router>
-      <div>
-        <Route exact path='/' component={Home} />
-        <Route path='/html/ZamygaAlexandra' component={ZamygaAlexandra} />
-        <Route path='/html/DenisKenzo' component={DenisKenzo} />
-        <Route exact path='/html/Krasav4er' component={Krasav4er} />
-        <Route path='/html/Krasav4er/project1' component={Project1} />
-        <Route path='/html/Krasav4er/project2' component={Project2} />
-        <Route path='/html/Yaroslav_Grushchak' component={Yaroslav_Grushchak} />
-        <Route exact path='/html/DarinkaP' component={DarinkaP} />
-        <Route path='/html/DarinkaP/project_1' component={DarinkaProject1} />
-      </div>
+    <div>
+      <Route exact path='/' component={Home} />
+      <Route path='/html/ZamygaAlexandra' component={ZamygaAlexandra} />
+      <Route path='/html/DenisKenzo' component={DenisKenzo} />
+      <Route exact path='/html/Krasav4er' component={Krasav4er} />
+      <Route path='/html/Krasav4er/project1' component={Project1} />
+      <Route path='/html/Krasav4er/project2' component={Project2} />
+      <Route path='/html/Yaroslav_Grushchak' component={Yaroslav_Grushchak} />
+      <Route exact path='/html/DarinkaP' component={DarinkaP} />
+      <Route path='/html/DarinkaP/project_1' component={DarinkaProject1} />
+    </div>
   </Router>,
   document.getElementById('root')
 )
