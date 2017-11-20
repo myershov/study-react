@@ -41,7 +41,7 @@ class Header extends Component {
                   <ul className='navlist'>
                     <li className='navlist__item dropdown-activator d-lev-1'>
                       <a href='javascript:void(0)' className='navlist__link'>
-                        <img src={require('../images/menu-icon.jpg')} className='menu-icon' />
+                        <img src={require('../images/circle.png')} className='menu-icon' />
                           КАТАЛОГ ТОВАРОВ
                         <img src='img/menu-icon-drop.jpg' className='menu-icon-drop' />
                       </a>
